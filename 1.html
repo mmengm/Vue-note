@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1 v-bind:title='dyTitle'></h1>
+
+<div v-if="isLogin">你好 vue</div>
+
+
+<ul>
+    <li v-for="item in items"> {{item}}</li>
+</ul>
+
+<div>
+    <input type="text" placeholder="请输入文字" v-model="msg">
+</div>
+
+
+<div>
+    <label>阿木木</label>
+    <input type="checkbox" name="阿木木" v-model="checkNames">
+    <label>安妮</label>
+    <input type="checkbox" name="安妮" v-model="checkNames">
+    <label>扎克</label>
+    <input type="checkbox" name="扎克" v-model="checkNames">
+    <label>卡尔玛</label>
+    <input type="checkbox" name="卡尔玛" v-model="checkNames">
+</div>
+
+
+<div>
+    <button v-on:chick="count+=1">chick me</button>
+    <span>按钮被点击了 {{count}} 次</span>
+</div>
+
+<script>
+    msg:function () {
+
+        return 'hello'
+    }
+</script>
+</body>
+</html>
